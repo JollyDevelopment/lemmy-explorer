@@ -174,7 +174,6 @@ const PiefedCard = React.memo(function ({ community }: PiefedCardProps) {
               <TinyNumber value={community.post_count} />
             </Typography>
           </Tooltip>
-          {/* 
           <Divider orientation="vertical" />
           <Tooltip title="Comments" variant="soft">
             <Typography
@@ -190,7 +189,7 @@ const PiefedCard = React.memo(function ({ community }: PiefedCardProps) {
               }}
             >
               <ForumIcon />
-              <TinyNumber value={community.counts.comments} />
+              <TinyNumber value={community.comments_count} />
             </Typography>
           </Tooltip>
           <Divider orientation="vertical" />
@@ -208,9 +207,9 @@ const PiefedCard = React.memo(function ({ community }: PiefedCardProps) {
               }}
             >
               <TrendingUpIcon />
-              <TinyNumber value={community.counts.users_active_week} />
+              <TinyNumber value={community.active_weekly} />
             </Typography>
-          </Tooltip> */}
+          </Tooltip>
         </CardContent>
       </CardOverflow>
     </Card>

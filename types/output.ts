@@ -102,22 +102,18 @@ export type IMBinMagazineOutput = {
 
 export type IPiefedCommunityDataOutput = {
   baseurl: string;
-  // url: string;
   name: string;
   title: string;
-  // desc: string;
   icon: string | null;
-  description: string | null;
-  // banner: string | null;
   nsfw: boolean;
-  // counts: Object;
   subscriptions_count: number;
   post_count: number;
+  comments_count: number;
+  active_weekly: number;
   published: string;
   time: number;
-  // isSuspicious: boolean;
-  // score: number;
   restricted_to_mods: boolean;
+  description: string | null;
 };
 
 export type IFediverseDataOutput = {

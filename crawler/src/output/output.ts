@@ -1363,6 +1363,8 @@ export default class CrawlOutput {
         nsfw: piefed.community.nsfw,
         subscriptions_count: piefed.counts.subscriptions_count,
         post_count: piefed.counts.post_count,
+        comments_count: piefed.counts.post_reply_count,
+        active_weekly: piefed.counts.active_weekly,
         published: piefed.community.published,
         time: piefed.lastCrawled || 0,
         restricted_to_mods: piefed.community.restricted_to_mods,
